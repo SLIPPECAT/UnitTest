@@ -1,0 +1,30 @@
+spring:
+  cache:
+    cache-names: cache1,cache2
+    redis:
+      time-to-live: 10m
+
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: wnsdud12!@
+    url: jdbc:mysql://localhost:3306/city
+    tomcat:
+      max-wait: 10000
+      max-active: 50
+      test-on-borrow: true
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate[globally_quoted_identifiers]=true:
+
+#  mail:
+#    properties:
+#      mail:
+#        smtp:
+#          connectiontimeout: 5000
+#          timeout:3000
+#          writetimeout: 5000
+
